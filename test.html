@@ -4,9 +4,10 @@
     <div id='div'>
       <p id="p"></p>
     </div>
-    <input type="text" id="input" placeholder="Add colour or border radius here.">
+    <input type="text" id="color" placeholder="Add a colour here.">
+    <input type="text" id="borderradius" placeholder="Add a border radius here.">
     <style>
-      #input {
+      #color {
         position: fixed;
         inset: 0px;
         width: 200px;
@@ -15,6 +16,20 @@
         max-height: 100dvh;
         margin: auto;
         top: 275px;
+        border: solid black;
+        border-radius: 10px;
+        background-color: ivory;
+      }
+
+      #borderradius {
+        position: fixed;
+        inset: 0px;
+        width: 200px;
+        height: 25px;
+        max-width: 100vw;
+        max-height: 100dvh;
+        margin: auto;
+        top: 300px;
         border: solid black;
         border-radius: 10px;
         background-color: ivory;
@@ -46,11 +61,15 @@
     <script>
       let div = document.getElementById("div")
       let p = document.getElementById("p")
-      let input = document.getElementById("input")
+      let color = document.getElementById("color")
+      let borderradius = document.getElementById("borderradius")
 
-      input.addEventListener("input", function() {
-        div.style.backgroundColor = input.value
-        div.style.borderRadius = input.value
+      color.addEventListener("input", function() {
+        div.style.backgroundColor = color.value
+      })
+
+      borderradius.addEventListener("input", function() {
+        div.style.borderRadius = borderradius.value
       })
     </script>
   </body>
