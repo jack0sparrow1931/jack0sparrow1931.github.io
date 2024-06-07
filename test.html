@@ -4,8 +4,22 @@
     <div id='div'>
       <p id="p"></p>
     </div>
-    <input type="text" id="input">
+    <input type="text" id="input" placeholder="Add colour or border radius here.">
     <style>
+      #input {
+        position: fixed;
+        inset: 0px;
+        width: 200px;
+        height: 25px;
+        max-width: 100vw;
+        max-height: 100dvh;
+        margin: auto;
+        top: 275px;
+        border: solid black;
+        border-radius: 10px;
+        background-color: ivory;
+      }
+
       #div {
         width: 200px;
         height: 200px;
@@ -23,7 +37,6 @@
 
       #div:hover {
         border-radius: 50%;
-        background-color: indigo;
       }
 
       body {
