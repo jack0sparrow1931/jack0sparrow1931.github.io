@@ -2,8 +2,9 @@
 <html>
   <body>
     <div id='div'>
-      
+      <p id="p"></p>
     </div>
+    <input type="text" id="input">
     <style>
       #div {
         width: 200px;
@@ -29,5 +30,15 @@
         background-color: #3d3c3c;
       }
     </style>
+    <script>
+      let div = document.getElementById("div")
+      let p = document.getElementById("p")
+      let input = document.getElementById("input")
+
+      input.addEventListener("input", function() {
+        div.style.backgroundColor = input.value
+        div.style.borderRadius = input.value
+      })
+    </script>
   </body>
 </html>
