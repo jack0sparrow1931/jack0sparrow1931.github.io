@@ -5,14 +5,16 @@
     <link rel='stylesheet' href='style.css'>
   </head>
   <body>
-    <input id="gday" type="text">
+    <input id="input" type="text">
+    <button id="button">
     <script>
-    let Interval = setInterval(function(){
-      console.log(document.getElementById('gday').value)
-    }, 100)
-    function stopInterval() {
-      clearInterval(Interval);
-    }
+      var button = document.getElementById("button")
+      var input = document.getElementById("input")
+      button.addEventListener("click", function() {
+        if (input.value = "ui test") {
+          window.location.replace("https://jack0sparrow1931.github.io/test")
+        }
+      })
     </script>
   </body>
 </html>
