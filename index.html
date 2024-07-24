@@ -9,12 +9,15 @@
     <button id="button">
     <script>
       var button = document.getElementById("button")
-      var input = document.getElementById("input").value.toLowerCase()
+      var input = document.getElementById("input").innerHTML.toLowerCase()
       button.addEventListener("click", function() {
-        if (input == "ui test") {
-          window.location.replace("https://jack0sparrow1931.github.io/test")
-        } else if (input == "sm64") {
-          window.location.replace("https://jack0sparrow1931.github.io/sm64")
+        switch(input) {
+          case "ui test":
+            window.location.replace("https://jack0sparrow1931.github.io/test")
+            break;
+          case "sm64":
+            window.location.replace("https://jack0sparrow1931.github.io/sm64")
+            break;
         }
       })
     </script>
