@@ -8,9 +8,8 @@
     <input id="input" type="text">
     <button id="button">
     <script>
-      var button = document.getElementById("button")
       var input = document.getElementById("input").value.toLowerCase()
-      button.addEventListener("click", function() {
+      document.getElementById("button").addEventListener("click", function() {
         switch(input) {
           case "ui test":
             console.warn("sm64")
