@@ -10,14 +10,12 @@
     <script>
       var input = document.getElementById("input").value
       document.getElementById("button").addEventListener("click", function() {
-        console.log("clicked")
+        console.log(input)
         switch(input) {
           case "ui test":
-            console.warn("ui test")
             window.location.replace("https://jack0sparrow1931.github.io/test")
             break;
           case "sm64":
-            console.warn("sm64")
             window.location.replace("https://jack0sparrow1931.github.io/sm64")
             break;
           default:
